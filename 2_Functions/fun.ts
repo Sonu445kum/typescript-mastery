@@ -54,9 +54,26 @@
 // printId("23");
 
 // Function Overloading
-function combine(a:number , b:number):number;
-function combine(a:string , b:string) :string;
-function combine(a:any , b :any):any{
-    return a+b;
+// function combine(a:number , b:number):number;
+// function combine(a:string , b:string) :string;
+// function combine(a:any , b :any):any{
+//     return a+b;
+// }
+// console.log("Sum of a and b :",combine(4,5));
+
+// Real world Examples:
+type User = {
+    name :string,
+    age: number,
+
 }
-console.log("Sum of a and b :",combine(4,5));
+function greetUser(user:User):string{
+    return `User:${user.name}  }created`
+}
+const user1 : User= {
+    name:"Sonu",
+    age:23
+}
+
+// console.log(greetUser(user1));
+console.log(greetUser({ name: "Sonu", age: 22 }));
