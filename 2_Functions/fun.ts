@@ -47,8 +47,16 @@
 //  console.log(addNum(3,5));
 
 // Union Types in Functions
-function printId(id:number | string) {
-    console.log(id);
+// function printId(id:number | string) {
+//     console.log(id);
+// }
+// printId(34);
+// printId("23");
+
+// Function Overloading
+function combine(a:number , b:number):number;
+function combine(a:string , b:string) :string;
+function combine(a:any , b :any):any{
+    return a+b;
 }
-printId(34);
-printId("23");
+console.log("Sum of a and b :",combine(4,5));
