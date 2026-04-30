@@ -34,3 +34,14 @@
 //     return nums.reduce((acc ,curr)=>acc + curr ,0);
 // }
 // console.log("The Total Sum is:",sum(1,2,3,4,5));
+
+// Void Return Type
+// function logMessage(name:string) : void {
+//     console.log(name);
+// }
+// logMessage("sonu");
+
+// 8. Function Type
+ let addNum  : (a:number , b :number)=>number;
+ addNum =(x , y)=> x+y;
+ console.log(addNum(3,5));
