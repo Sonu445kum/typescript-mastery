@@ -42,6 +42,13 @@
 // logMessage("sonu");
 
 // 8. Function Type
- let addNum  : (a:number , b :number)=>number;
- addNum =(x , y)=> x+y;
- console.log(addNum(3,5));
+//  let addNum  : (a:number , b :number)=>number;
+//  addNum =(x , y)=> x+y;
+//  console.log(addNum(3,5));
+
+// Union Types in Functions
+function printId(id:number | string) {
+    console.log(id);
+}
+printId(34);
+printId("23");
