@@ -12,5 +12,11 @@
 // console.log(greet("Sonu"));
 
 // 3. Arrow Functions
-const multiply = (a:number , b : number): number=>a*b;
-console.log(`Multiply :`,multiply(2,4));
+// const multiply = (a:number , b : number): number=>a*b;
+// console.log(`Multiply :`,multiply(2,4));
+
+// 4. Optional Parameters
+function  greetUser(name:string , age? :number):string{
+    return age ? `Hello: ${name} ,age :${age}` :`Hello:${name}`
+};
+console.log(greetUser("Sonu" , 23));
