@@ -16,7 +16,15 @@
 // console.log(`Multiply :`,multiply(2,4));
 
 // 4. Optional Parameters
-function  greetUser(name:string , age? :number):string{
-    return age ? `Hello: ${name} ,age :${age}` :`Hello:${name}`
-};
-console.log(greetUser("Sonu" , 23));
+// function  greetUser(name:string , age? :number):string{
+//     return age ? `Hello: ${name} ,age :${age}` :`Hello:${name}`
+// };
+// console.log(greetUser("Sonu" , 23));
+
+// 5. Default Parameters
+// function greeUser(name:string = "Sonu") : string {
+//     return `Welcome ${name}`;
+// }
+// // default output print
+// console.log(greeUser());
+// console.log("Pass prameter:",greeUser("jai Shree Ram"));
